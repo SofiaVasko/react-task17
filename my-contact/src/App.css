@@ -1,0 +1,88 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.fullName,
+.title,
+.gender,
+.phone,
+.female,
+.male,
+.no {
+  font-size: 1.5em;
+  color: bisque;
+}
+
+.phone {
+  color: black;
+}
+
+.gender {
+  color: rgb(71, 69, 69);
+}
+
+.title {
+  justify-self: center;
+  font-size: 2em;
+  background-color: rgba(37, 36, 36, 0.9);
+  border-left: 15px double rgb(212, 64, 94);
+  border-right: 15px double rgb(23, 75, 234);
+  border-radius: 50%;
+  margin: 0;
+}
+
+.input {
+  background-color: bisque;
+  border: bisque;
+  width: 200px;
+  height: 30px;
+}
+
+.input::placeholder {
+  font-size: 1.4em;
+  text-align: center;
+}
+
+.list_contacts {
+  background-color: rgba(37, 36, 36, 0.9);
+  text-align: center;
+}
+
+.contacts > ul {
+  display: grid;
+  grid-template-columns: 243px 243px 243px;
+  grid-template-rows: 208px 208px 208px;
+  grid-gap: 10px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.imgIcons {
+  background-color: black;
+  border: 2px double black;
+  border-radius: 50%;
+}
+
+.checkBoxes {
+  display: flex;
+  gap: 10px;
+}
+
+@media (max-width: 900px) {
+  .contacts > ul {
+    grid-template-columns: 243px 243px;
+    grid-template-rows: 208px 208px;
+  }
+}
+
+@media (max-width: 500px) {
+  .contacts > ul {
+    grid-template-columns: 243px;
+    grid-template-rows: 208px;
+  }
+}
